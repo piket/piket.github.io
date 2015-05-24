@@ -30,7 +30,7 @@ portfolioApp.controller('portfolioController', ['$scope','$location', function($
     }
 }]);
 
-portfolioApp.controller('mainController', ['$scope', function($scope){
+portfolioApp.controller('mainController', ['$scope','$sce', function($scope,$sec){
     // $scope.path = false;
 }]);
 
