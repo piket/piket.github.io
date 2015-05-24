@@ -1,0 +1,176 @@
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+
+.navbar-inverse .navbar-brand:hover {
+    color: #777;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #777;
+}
+
+nav.navbar {
+    /*position: fixed;*/
+    width: 100%;
+    /*margin-bottom: 20%;*/
+}
+
+ul.nav {
+    width: 100%;
+}
+
+div.header {
+    background-color: white;
+}
+
+h1 {
+    padding-top: 10%;
+}
+
+.tag-line {
+    /*text-shadow: 1px 1px #456EE5;
+    text-shadow: 2px 2px #456EE5;*/
+}
+
+.curly {
+    color: #0041FF;
+}
+
+.buffer {
+    padding-bottom: 5%;
+}
+
+.summary {
+    /*padding-top: 5%;*/
+}
+
+.mdi-content-mail {
+    color: black;
+    font-size: 100px;
+}
+
+img.contact {
+    height: 100px;
+}
+
+.contact-link {
+    margin: 10%;
+}
+
+/*.link-block>a {
+    color: black;
+}
+
+.link-block>a:hover {
+    color: #777;
+    text-decoration: none;
+}*/
+
+.nav-bar {
+    position: relative;
+    /*width: 70%;*/
+    margin: 0 auto;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 5%;
+    width: 10%;
+    background-color: #eaad10;
+}
+
+.nav-btn:hover {
+    background-color: #0041FF;
+}
+
+.active {
+    background-color: #456EE5;
+}
+
+.home-btn {
+    left: 5%;
+}
+
+.p1-btn {
+    left: 25%;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.p2-btn {
+    left: 45%;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.p3-btn {
+    left: 65%;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.contact-btn {
+    left: 85%;
+}
+
+.name {
+    color: #eaad10;
+    position: relative;
+}
+
+.logo {
+    /*position: absolute;*/
+    height: 100px;
+    display: inline-block;
+    margin-bottom: -25px;
+    /*left: 45%;*/
+}
+
+.project-image {
+    height: 300px;
+    border: 4px solid #456EE5;
+    border-radius: 4px;
+    padding: 4px;
+    margin: 0;
+}
+
+.viewport.ng-enter {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+
+.viewport.ng-enter-stagger {
+    transition-delay: 1s;
+}
+/*
+.viewport.ng-leave-stagger {
+    transition-delay: 1s;
+}*/
+
+.viewport.ng-leave-active {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+.nav-bar.ng-enter-active {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.nav-bar.ng-leave {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}

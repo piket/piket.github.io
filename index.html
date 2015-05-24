@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timon Pike</title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-route.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-animate.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.9.4/angular-material.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/0.9.4/angular-material.min.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+    <link href="http://fonts.googleapis.com/css?family=Lato&amp;subset=latin,latin-ext" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <base href="/">
+</head>
+<body ng-app="portfolioApp">
+<div class="container" ng-controller="portfolioController">
+<div class="row"><div class="nav-bar center col s12" ng-if="nav">
+        <a href="/#!/" class="waves-effect waves-light btn nav-btn home-btn" ng-class="{active:ifPath('/')}">Home</a>
+        <a href="/#!/project/1" class="waves-effect waves-light btn nav-btn p1-btn" ng-class="{active:ifPath('/project/1')}">Project 1</a>
+        <a href="/#!/project/2" class="waves-effect waves-light btn nav-btn p2-btn" ng-class="{active:ifPath('/project/2')}">Project 2</a>
+        <a href="/#!/project/3" class="waves-effect waves-light btn nav-btn p3-btn" ng-class="{active:ifPath('/project/3')}">Project 3</a>
+        <a href="/#!/contact" class="waves-effect waves-light btn nav-btn contact-btn" ng-class="{active:ifPath('/contact')}">Contact</a>
+</div></div>
+<div class="center">
+    <div class="header col s12">
+        <h1 class="name">
+        <img class="logo" src="/intital_circle_1.png">
+        Timon Pike</h1>
+        <h3 class="tag-line"><span class="curly">{</span> Full-stack Web Developer <span class="curly">}</span></h3>
+    </div>
+    <div ng-if="!nav" class="nav-bar">
+        <a href="/#!/" class="waves-effect waves-light btn nav-btn home-btn" ng-class="{active:ifPath('/')}">Home</a>
+        <a href="/#!/project/1" class="waves-effect waves-light btn nav-btn p1-btn" ng-class="{active:ifPath('/project/1')}">Project 1</a>
+        <a href="/#!/project/2" class="waves-effect waves-light btn nav-btn p2-btn" ng-class="{active:ifPath('/project/2')}">Project 2</a>
+        <a href="/#!/project/3" class="waves-effect waves-light btn nav-btn p3-btn" ng-class="{active:ifPath('/project/3')}">Project 3</a>
+        <a href="/#!/contact" class="waves-effect waves-light btn nav-btn contact-btn" ng-class="{active:ifPath('/contact')}">Contact</a>
+    </div>
+    <div class="buffer"></div>
+
+<div ng-view class="viewport"></div>
+</div>
+</div>
+</body>
+</html>
