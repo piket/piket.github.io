@@ -82,6 +82,7 @@ img.contact {
     top: 5%;
     width: 10%;
     background-color: #eaad10;
+    padding: 0;
 }
 
 .nav-btn:hover {
@@ -98,20 +99,14 @@ img.contact {
 
 .p1-btn {
     left: 25%;
-    padding-right: 20px;
-    padding-left: 20px;
 }
 
 .p2-btn {
     left: 45%;
-    padding-right: 20px;
-    padding-left: 20px;
 }
 
 .p3-btn {
     left: 65%;
-    padding-right: 20px;
-    padding-left: 20px;
 }
 
 .contact-btn {
@@ -177,4 +172,5 @@ img.contact {
 
 .description {
   text-align: left;
+  font-size: 14pt;
 }
