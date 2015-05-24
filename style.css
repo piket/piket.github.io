@@ -168,7 +168,7 @@ img.contact {
   animation-name: fadeIn;
 }
 
-.nav-bar.ng-leave {
+.nav-bar.ng-leave-active {
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
   -webkit-animation-name: fadeOut;
