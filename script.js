@@ -39,15 +39,15 @@ portfolioApp.controller('projectController', ['$scope','$routeParams','$location
     switch($routeParams.id) {
         case '1':
             $scope.projectImage = "fantasystarcraft.png";
-            $scope.projectText = "Project 1 coming soon...";
+            $scope.projectText = 'My first web app I created at General Assembly was <a href="http://www.fantasystarcraft.com">Fantasy Starcraft II</a>, A site for casual fans of professional Starcraft II tournaments to create their own fantasy leagues with friends.';
             break;
         case '2':
             $scope.projectImage = "fstvl.png";
-            $scope.projectText = "Project 2 coming soon...";
+            $scope.projectText = 'Project 2 coming soon...';
             break;
         case '3':
             $scope.projectImage = "default.png";
-            $scope.projectText = "Project 3 coming soon...";
+            $scope.projectText = 'Project 3 coming soon...';
             break;
         default:
             $location.path('/')
