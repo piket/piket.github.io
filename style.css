@@ -161,16 +161,20 @@ img.contact {
   animation-name: fadeOut;
 }
 
-.nav-bar.ng-enter-active {
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
+.nav-bar.ng-enter {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
 }
 
 .nav-bar.ng-leave-active {
-  -webkit-animation-duration: 0.5s;
+  -webkit-animation-duration: 01s;
   animation-duration: 0.5s;
   -webkit-animation-name: fadeOut;
   animation-name: fadeOut;
+}
+
+.description {
+  text-align: left;
 }

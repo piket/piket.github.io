@@ -1,4 +1,4 @@
-var portfolioApp = angular.module('portfolioApp', ['ngAnimate','ngRoute','ngSanitize']);
+var portfolioApp = angular.module('portfolioApp', ['ngAnimate','ngSanitize','ngRoute']);
 
 portfolioApp.config(['$routeProvider','$locationProvider',function($routeProvider,$locationProvider) {
     $routeProvider.when('/', {
@@ -30,11 +30,11 @@ portfolioApp.controller('portfolioController', ['$scope','$location', function($
     }
 }]);
 
-portfolioApp.controller('mainController', ['$scope','$sce', function($scope,$sec){
+portfolioApp.controller('mainController', ['$scope', function($scope){
     // $scope.path = false;
 }]);
 
-portfolioApp.controller('projectController', ['$scope','$routeParams','$location', function($scope,$routeParams,$location){
+portfolioApp.controller('projectController', ['$scope','$routeParams','$location','$sce', function($scope,$routeParams,$location,$sce){
     console.log($routeParams.id)
     switch($routeParams.id) {
         case '1':
