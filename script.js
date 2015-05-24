@@ -43,7 +43,7 @@ portfolioApp.controller('projectController', ['$scope','$routeParams','$location
             break;
         case '2':
             $scope.projectImage = "fstvl.png";
-            $scope.projectText = $sce.trustAsHtml('Project 2 coming soon...');
+            $scope.projectText = $sce.trustAsHtml('<a href="http://fstvl.herokuapp.com">Project 2</a> coming soon...');
             break;
         case '3':
             $scope.projectImage = "default.png";
