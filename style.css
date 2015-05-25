@@ -89,26 +89,26 @@ img.contact {
     background-color: #0041FF;
 }
 
-a.md-button.md-default-theme.md-primary {
+a.md-button.md-default-theme.md-primary.md-raised {
   color: white;
   background-color: #eaad10;
 }
 
-a.md-button.md-default-theme.md-primary:focus {
+a.md-button.md-default-theme.md-primary.md-raised:focus {
   color: white;
   background-color: #eaad10;
 }
 
-a.md-button.md-default-theme.md-primary:hover {
+a.md-button.md-default-theme.md-primary.md-raised:hover {
   color: white;
   background-color: #0041FF;
 }
 
-a.md-button.md-default-theme.md-primary.active {
+a.md-button.md-default-theme.md-primary.md-raised.active {
     background-color: #456EE5;
 }
 
-a.md-button.md-default-theme.md-primary.active:focus {
+a.md-button.md-default-theme.md-primary.md-raised.active:focus {
   color: white;
   background-color: #456EE5;
 }
