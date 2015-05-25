@@ -1,4 +1,24 @@
-var portfolioApp = angular.module('portfolioApp', ['ngAnimate','ngSanitize','ngRoute']);
+var portfolioApp = angular.module('portfolioApp', ['ngAnimate','ngSanitize','ngMaterial','ngRoute']);
+
+portfolioApp.config(['$mdThemingProvider',function($mdThemingProvider) {
+    // $mdThemingProvider.definePalette('goldAndBlue', {
+    //     '50': 'eaad10',
+    //     '100': 'D29B0E',
+    //     '200': 'BA890C',
+    //     '300': 'A2780B',
+    //     '400': 'EFB623',
+    //     '500': 'F1BE3B',
+    //     '600': '654B07',
+    //     '700': '654B07',
+    //     '800': 'AA8C3E',
+    //     '900': 'E5BD54',
+    //     'A100': '0041ff',
+    //     'A200': '456ee5',
+    //     'A400': '002798',
+    //     'A700': '001A65'
+    // })
+    $mdThemingProvider.theme('default').primaryPalette('indigo')
+}]);
 
 portfolioApp.config(['$routeProvider','$locationProvider',function($routeProvider,$locationProvider) {
     $routeProvider.when('/', {

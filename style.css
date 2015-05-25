@@ -89,6 +89,30 @@ img.contact {
     background-color: #0041FF;
 }
 
+a.md-button.md-default-theme.md-primary {
+  color: white;
+  background-color: #eaad10;
+}
+
+a.md-button.md-default-theme.md-primary:focus {
+  color: white;
+  background-color: #eaad10;
+}
+
+a.md-button.md-default-theme.md-primary:hover {
+  color: white;
+  background-color: #0041FF;
+}
+
+a.md-button.md-default-theme.md-primary.active {
+    background-color: #456EE5;
+}
+
+a.md-button.md-default-theme.md-primary.active:focus {
+  color: white;
+  background-color: #456EE5;
+}
+
 .active {
     background-color: #456EE5;
 }
