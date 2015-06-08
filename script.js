@@ -59,7 +59,7 @@ portfolioApp.controller('projectController', ['$scope','$routeParams','$location
 
     var project1Text = 'The first web app I created at General Assembly was <a href="http://www.fantasystarcraft.com">Fantasy Starcraft II</a>, a site for casual fans of professional Starcraft II tournaments to create their own fantasy leagues with friends. The project was built with NodeJS and ExpressJS.';
     var project2Text = 'Myself and a partner created <a href="http://fstvl.herokuapp.com">FSTVL</a> as a group project at General Assembly. The site is designed to be a scheduler for attendees to festivals, conventions, and conferences that have many events. Festival organizers can sign up to populate their event data which is searchable for consumers. Consumers can add the events they want to go to and view a calendar that displays their selected events and share that calendar with other users. Once a calendar is shared, the recipient can compare their calendar to their friend\'s. On the compare view, users can delete their events or add their friend\'s events to their own calendars. The project was built in Ruby on Rails';
-    var project3Text = 'Project 3 coming soon...';
+    var project3Text = 'The final we app I created at General Assembly was <a href="http://rpgchat.herokuapp.com/">RPGChat</a>, a site for groups to play games such as Dungeons &amp; Dragons online through a chat with specific chat commands and features to facilitate role-playing. The site allows users to create games, search for games to join, and finally join a game. Each player can create a character with a built-in character sheet that is tied to features of the chat. Game Masters and players have powerful features such as changing the their name dynamically during chat, hiding messages so that only the characters with the right language can read them, and a flexible dice rolling system injected into chat messages. The project was built in Sails.js with Angular.js.';
 
     switch($routeParams.id) {
         case '1':
@@ -75,7 +75,7 @@ portfolioApp.controller('projectController', ['$scope','$routeParams','$location
             $scope.projectText = $sce.trustAsHtml(project3Text);
             break;
         default:
-            $location.path('/')
+            location.href = '/';
             break;
     }
 }]);
